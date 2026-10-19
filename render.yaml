@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: yawm-rahim
+    runtime: node
+    plan: free
+    buildCommand: "echo no build"
+    startCommand: node server.js
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
